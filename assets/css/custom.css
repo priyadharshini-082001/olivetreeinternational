@@ -1,0 +1,2106 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: clip;
+}
+/* ==========================================
+   OLIVE TREE GLOBAL SCHOOL
+   GRAND BROWN & GREEN MARQUEE
+========================================== */
+
+.ot-grand-marquee,
+.ot-grand-marquee * {
+    box-sizing: border-box;
+}
+
+.ot-grand-marquee {
+    --ot-green: #226e0c;
+    --ot-deep-green:#226e0c;
+    --ot-brown: #382719;
+    --ot-gold: #f9ce7d;
+    --ot-light-gold: #ffd362;
+    --ot-white: #ffffff;
+
+    width: 100%;
+    min-height: 66px;
+
+    display: flex;
+    align-items: stretch;
+
+    overflow: hidden;
+    position: relative;
+
+    background: var(--ot-green);
+
+    border-top: 2px solid var(--ot-gold);
+    border-bottom: 2px solid var(--ot-gold);
+}
+
+/* TOP GOLD DETAIL */
+
+.ot-grand-marquee::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 1px;
+    background: rgba(255, 255, 255, 0.22);
+
+    pointer-events: none;
+    z-index: 3;
+}
+
+/* ==========================================
+   LEFT BRAND LABEL
+========================================== */
+
+.ot-marquee-label {
+    flex: 0 0 205px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    position: relative;
+    z-index: 2;
+
+    padding: 10px 16px;
+
+    background: linear-gradient(
+        135deg,
+        #483322,
+        #302116
+    );
+
+    border-right: 2px solid var(--ot-gold);
+}
+
+/* ICON CIRCLE */
+
+.ot-label-icon {
+    width: 39px;
+    height: 39px;
+    flex: 0 0 39px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--ot-gold);
+    border-radius: 50%;
+
+    background: rgba(198, 161, 92, 0.09);
+
+    color: var(--ot-light-gold);
+    font-size: 16px;
+
+    transition: background 0.3s ease,
+                transform 0.3s ease;
+}
+
+.ot-grand-marquee:hover .ot-label-icon {
+    background: rgba(198, 161, 92, 0.18);
+    transform: rotate(-6deg);
+}
+
+/* LABEL TEXT */
+
+.ot-label-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.ot-label-small {
+    color: var(--ot-light-gold);
+
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.ot-label-main {
+    color: var(--ot-white);
+
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    line-height: 1.2;
+}
+
+/* SMALL DECORATIVE GOLD LINE */
+
+.ot-label-decoration {
+    position: absolute;
+    right: -1px;
+    top: 14px;
+
+    width: 3px;
+    height: 34px;
+
+    background: var(--ot-light-gold);
+}
+
+/* ==========================================
+   MARQUEE VIEWPORT
+========================================== */
+
+.ot-marquee-viewport {
+    flex: 1;
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* ANIMATED TRACK */
+
+.ot-marquee-track {
+    display: flex;
+    align-items: center;
+
+    width: max-content;
+    flex: 0 0 auto;
+
+    animation: otGrandScroll 38s linear infinite;
+
+    will-change: transform;
+}
+
+/* EACH DUPLICATED GROUP */
+
+.ot-marquee-group {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+}
+
+/* ==========================================
+   ANNOUNCEMENT ITEM
+========================================== */
+
+.ot-marquee-item {
+    flex: 0 0 auto;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 0 25px;
+
+    color: var(--ot-white);
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 800;
+
+    line-height: 1.5;
+    white-space: nowrap;
+
+    text-decoration: none;
+}
+
+/* ICON */
+
+.ot-marquee-icon {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--ot-light-gold);
+
+    background: rgba(255, 255, 255, 0.055);
+
+    border: 1px solid rgba(198, 161, 92, 0.55);
+    border-radius: 50%;
+
+    font-size: 14px;
+
+    transition: all 0.3s ease;
+}
+
+.ot-marquee-item:hover .ot-marquee-icon {
+    background: var(--ot-gold);
+    color: var(--ot-deep-green);
+}
+
+/* ANNOUNCEMENT TEXT */
+
+.ot-marquee-message {
+    color: #f4f0e7;
+}
+
+.ot-marquee-message strong {
+    color: var(--ot-light-gold);
+    font-weight: 800;
+}
+
+/* APPLY NOW BADGE */
+
+.ot-marquee-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px 9px;
+
+    background: var(--ot-gold);
+    color: var(--ot-brown);
+
+    border-radius: 3px;
+
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 0.7px;
+}
+
+/* ==========================================
+   GOLD SEPARATORS
+========================================== */
+
+.ot-marquee-separator {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--ot-gold);
+    opacity: 0.95;
+
+    font-size: 11px;
+}
+
+/* ==========================================
+   RIGHT DECORATIVE PANEL
+========================================== */
+
+.ot-marquee-end {
+    flex: 0 0 53px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+
+    color: var(--ot-light-gold);
+    font-size: 20px;
+
+    background: var(--ot-deep-green);
+
+    border-left: 1px solid rgba(198, 161, 92, 0.65);
+}
+
+/* ==========================================
+   INFINITE ANIMATION
+========================================== */
+
+@keyframes otGrandScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* PAUSE ON HOVER */
+
+.ot-grand-marquee:hover .ot-marquee-track {
+    animation-play-state: paused;
+}
+
+/* KEYBOARD FOCUS */
+
+.ot-marquee-item:focus-visible {
+    outline: 2px solid var(--ot-light-gold);
+    outline-offset: -3px;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 900px) {
+    .ot-grand-marquee {
+        min-height: 58px;
+    }
+
+    .ot-marquee-label {
+        flex-basis: 165px;
+        gap: 9px;
+        padding: 8px 12px;
+    }
+
+    .ot-label-icon {
+        width: 34px;
+        height: 34px;
+        flex-basis: 34px;
+        font-size: 14px;
+    }
+
+    .ot-label-small {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+    }
+
+    .ot-label-main {
+        font-size: 15px;
+    }
+
+    .ot-marquee-item {
+        gap: 9px;
+        padding: 0 18px;
+        font-size: 15px;
+    }
+
+    .ot-marquee-icon {
+        width: 30px;
+        height: 30px;
+        flex-basis: 30px;
+        font-size: 12px;
+    }
+
+    .ot-marquee-end {
+        flex-basis: 42px;
+        font-size: 17px;
+    }
+
+    .ot-marquee-track {
+        animation-duration: 32s;
+    }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+    .ot-grand-marquee {
+        min-height: 48px;
+    }
+
+    .ot-marquee-label {
+        flex-basis: 106px;
+        gap: 7px;
+        padding: 6px 8px;
+
+        border-right-width: 1px;
+    }
+
+    .ot-label-icon {
+        width: 27px;
+        height: 27px;
+        flex-basis: 27px;
+        font-size: 11px;
+    }
+
+    .ot-label-small {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+    .ot-label-main {
+        font-size: 11px;
+        letter-spacing: 0.7px;
+    }
+
+    .ot-label-decoration {
+        top: 11px;
+        height: 26px;
+    }
+
+    .ot-marquee-item {
+        gap: 7px;
+        padding: 0 13px;
+        font-size: 15px;
+    }
+
+    .ot-marquee-icon {
+        width: 25px;
+        height: 25px;
+        flex-basis: 25px;
+        font-size: 10px;
+    }
+
+    .ot-marquee-badge {
+        padding: 4px 6px;
+        font-size: 8px;
+    }
+
+    .ot-marquee-separator {
+        font-size: 9px;
+    }
+
+    .ot-marquee-end {
+        flex-basis: 30px;
+        font-size: 13px;
+    }
+
+    .ot-marquee-track {
+        animation-duration: 28s;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 360px) {
+    .ot-grand-marquee {
+        min-height: 44px;
+    }
+
+    .ot-marquee-label {
+        flex-basis: 91px;
+        gap: 5px;
+        padding: 5px 6px;
+    }
+
+    .ot-label-icon {
+        width: 23px;
+        height: 23px;
+        flex-basis: 23px;
+        font-size: 9px;
+    }
+
+    .ot-label-small {
+        font-size: 6px;
+        letter-spacing: 0.7px;
+    }
+
+    .ot-label-main {
+        font-size: 10px;
+        letter-spacing: 0.3px;
+    }
+
+    .ot-marquee-item {
+        gap: 6px;
+        padding: 0 10px;
+        font-size: 15px;
+    }
+
+    .ot-marquee-icon {
+        width: 22px;
+        height: 22px;
+        flex-basis: 22px;
+        font-size: 9px;
+    }
+
+    .ot-marquee-end {
+        flex-basis: 25px;
+        font-size: 11px;
+    }
+}
+
+/* ==========================================
+   REDUCED MOTION ACCESSIBILITY
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .ot-marquee-track {
+        animation: none;
+        will-change: auto;
+    }
+
+    .ot-marquee-viewport {
+        overflow-x: auto;
+    }
+}
+
+/* ================= MODERN FOOTER ================= */
+
+.ot-modern-footer {
+    background:darkgreen;
+    color: #ffffff;
+    padding:50px 30px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3%;
+}
+
+.ot-footer-container {
+    max-width: 1450px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.7fr 1.1fr 1.1fr;
+    gap: 42px;
+    padding-bottom: 42px;
+}
+
+/* COLUMN HEADINGS */
+
+.ot-footer-column h3 {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 14px;
+}
+
+.ot-footer-line {
+    display: block;
+    width: 52px;
+    height: 3px;
+    background: #d9df67;
+    border-radius: 5px;
+    margin-bottom: 24px;
+}
+
+/* ABOUT SECTION */
+
+.ot-footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 155px;
+    height: 76px;
+    background: #ffffff;
+    border-radius: 7px;
+    margin-bottom: 18px;
+    padding: 8px;
+}
+
+.ot-footer-logo img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.ot-footer-about p {
+    color: #f0f7f0;
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 0;
+    text-align: justify;
+}
+
+/* QUICK LINKS */
+
+.ot-footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ot-footer-links li {
+    margin-bottom: 13px;
+}
+
+.ot-footer-links a {
+    display: inline-block;
+    color: #f5fff5;
+    text-decoration: none;
+    font-size: 17px;
+    transition: color 0.25s ease,
+                transform 0.25s ease;
+}
+
+.ot-footer-links a::before {
+    content: "\f054";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 15px;
+    color: #d9df67;
+    margin-right: 12px;
+}
+
+.ot-footer-links a:hover {
+    color: #d9df67;
+    transform: translateX(4px);
+}
+
+/* CONTACT DETAILS */
+
+.ot-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.ot-contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 35px;
+    height: 35px;
+    color: #d9df67;
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.ot-contact-item p {
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 0;
+}
+
+.ot-contact-item p strong {
+    font-weight: 600;
+}
+
+.ot-contact-item a {
+    color: #ffffff;
+    font-size: 17px;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    padding-top: 7px;
+    transition: color 0.25s ease;
+}
+
+.ot-contact-item a:hover {
+    color: #d9df67;
+}
+
+/* GOOGLE MAP */
+
+.ot-map-frame {
+    width: 100%;
+    height: 235px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #ffffff;
+}
+
+.ot-map-frame iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.ot-map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+    color: #e5e99b;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+.ot-map-link:hover {
+    color: #ffffff;
+}
+
+/* COPYRIGHT BAR */
+
+.ot-footer-bottom {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+
+.ot-footer-bottom p {
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.ot-footer-credit {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.ot-footer-credit a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 90px;
+    height: 36px;
+    padding: 5px 10px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.ot-footer-credit img {
+    display: block;
+    max-width: 100%;
+    max-height: 27px;
+    object-fit: contain;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1050px) {
+    .ot-footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 38px;
+    }
+
+    .ot-map-frame {
+        height: 250px;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+    .ot-modern-footer {
+        padding: 35px 20px 0;
+    }
+
+    .ot-footer-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding-bottom: 30px;
+    }
+
+    .ot-footer-column h3 {
+        font-size: 20px;
+    }
+
+    .ot-footer-line {
+        margin-bottom: 20px;
+    }
+
+    .ot-footer-about p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .ot-contact-item p,
+    .ot-contact-item a {
+        font-size: 14px;
+    }
+
+    .ot-map-frame {
+        height: 230px;
+    }
+
+    .ot-footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .ot-footer-credit {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+/* ===== OLIVE TREE VISION & MISSION ===== */
+
+.olive-vision-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 22px 20px 30px;
+    background: #fff7ef;
+    color: #174d3e;
+    box-sizing: border-box;
+    isolation: isolate;
+}
+
+.olive-vision-section *,
+.olive-vision-section *::before,
+.olive-vision-section *::after {
+    box-sizing: border-box;
+}
+
+.olive-vm-container {
+    max-width: 1050px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* BACKGROUND DECORATIONS */
+
+.olive-decoration {
+    position: absolute;
+    pointer-events: none;
+}
+
+.olive-top-left {
+    width: 140px;
+    height: 95px;
+    top: -42px;
+    left: -35px;
+    background: #bce4d2;
+    border-radius: 0 0 80px 0;
+    transform: rotate(-8deg);
+}
+
+.olive-bottom-left {
+    width: 390px;
+    height: 130px;
+    left: -75px;
+    bottom: -78px;
+    background: #2e8a78;
+    border-radius: 50% 60% 0 0;
+    transform: rotate(12deg);
+}
+
+.olive-sun {
+    position: absolute;
+    top: 8px;
+    right: 9%;
+    font-size: 63px;
+    line-height: 1;
+    color: #ffb81c;
+}
+
+.olive-paper-plane {
+    position: absolute;
+    top: 90px;
+    right: 5%;
+    color: #318dc2;
+    font-size: 46px;
+    transform: rotate(-35deg);
+}
+
+.olive-star {
+    position: absolute;
+    z-index: 1;
+    font-size: 21px;
+}
+
+.olive-star-one {
+    right: 8%;
+    top: 205px;
+    color: #f45f68;
+}
+
+.olive-star-two {
+    right: 5%;
+    top: 250px;
+    color: #51b781;
+}
+
+/* HEADER */
+
+.olive-vm-header {
+    text-align: center;
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 3;
+}
+
+.olive-vm-badge {
+    display: inline-block;
+    padding: 6px 23px;
+    border-radius: 30px;
+    background: #ffd24d;
+    color: #075d4c;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.olive-vm-header h2 {
+    color: #075d4c;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 10px 0 12px;
+}
+
+.olive-vm-header h2 span {
+    color: #ffb316;
+}
+
+.olive-vm-header p {
+    color: #414141;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* SHAPE LAYOUT */
+
+.olive-vm-layout {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:55px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* VISION ORGANIC SHAPE */
+
+.olive-vm-vision {
+    position: relative;
+    min-height: 320px;
+    padding: 43px 36px 32px;
+    background: #006b56;
+    color: #ffffff;
+    border-radius: 35% 48% 39% 30% / 28% 30% 35% 39%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    isolation: isolate;
+}
+
+.olive-vm-vision::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 10px -13px -10px -13px;
+    background: #d7eee3;
+    border-radius: 40% 42% 32% 38% / 30% 30% 40% 40%;
+    border: 2px solid darkcyan;
+}
+
+/* MISSION ORGANIC SHAPE */
+
+.olive-vm-mission {
+    position: relative;
+    min-height: 320px;
+    padding: 43px 35px 32px;
+    background: #ffca45;
+    color: #174d3e;
+    border-radius: 42% 35% 38% 43% / 32% 30% 40% 39%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    isolation: isolate;
+}
+
+.olive-vm-mission::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 8px -10px -8px -10px;
+    background: #ffe6a4;
+    border-radius: 35% 40% 43% 36% / 28% 35% 35% 42%;
+     border: 2px solid rgb(234, 155, 44);
+}
+
+/* NUMBER CIRCLES */
+
+.olive-vm-number {
+    position: absolute;
+    top: -16px;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 32px;
+    font-weight: 800;
+    z-index: 2;
+}
+
+
+
+/* ICONS */
+
+.olive-vm-symbol {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 8px;
+}
+
+.olive-vm-symbol svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: rgb(0, 0, 0);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* TITLES */
+
+.olive-vm-vision h3,
+.olive-vm-mission h3 {
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin: 0 0 10px;
+}
+
+.olive-vm-vision h3 {
+    color: rgb(0, 0, 0);
+}
+
+.olive-vm-mission h3 {
+    color: #000000;
+}
+
+.olive-vm-line {
+    display: block;
+    width: 43px;
+    height: 4px;
+    border-radius: 5px;
+    background: #ffcf36;
+    margin-bottom: 14px;
+}
+
+.olive-vm-mission .olive-vm-line {
+    background: #f36a70;
+}
+
+/* PARAGRAPHS */
+
+.olive-vm-vision p,
+.olive-vm-mission p {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.55;
+    margin: 0;
+}
+
+.olive-vm-vision p {
+    color: rgb(0, 0, 0);
+}
+
+.olive-vm-mission p {
+    color: #000000;
+}
+
+/* SMALL VISION DECORATION */
+
+.vision-spark {
+    color: #ffd13e;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1;
+    position: absolute;
+    bottom: 20px;
+    right: 28px;
+    transform: rotate(25deg);
+}
+
+/* BOOK ILLUSTRATION */
+
+.olive-books {
+    position: absolute;
+    width: 120px;
+    height: 125px;
+    right: -45px;
+    bottom: -4px;
+    z-index: 3;
+}
+
+.olive-book {
+    position: absolute;
+    width: 110px;
+    height: 20px;
+    right: 0;
+    border-radius: 4px 5px 5px 4px;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+}
+
+.book-blue {
+    bottom: 39px;
+    background: #278bc2;
+    transform: rotate(-3deg);
+}
+
+.book-green {
+    bottom: 21px;
+    background: #40a873;
+    transform: rotate(2deg);
+}
+
+.book-red {
+    bottom: 3px;
+    background: #ef5d61;
+    transform: rotate(-2deg);
+}
+
+.olive-pencil-pot {
+    position: absolute;
+    right: 20px;
+    bottom: 42px;
+    width: 40px;
+    height: 48px;
+    background: #ffb928;
+    border-radius: 3px 3px 10px 10px;
+    z-index: 2;
+}
+
+.olive-pencils {
+    position: absolute;
+    right: 26px;
+    bottom: 84px;
+    display: flex;
+    gap: 5px;
+    z-index: 1;
+}
+
+.olive-pencils span {
+    display: block;
+    width: 5px;
+    height: 38px;
+    border-radius: 3px 3px 0 0;
+    background: #318fc3;
+    transform: rotate(-7deg);
+}
+
+.olive-pencils span:nth-child(2) {
+    background: #f15f61;
+    height: 46px;
+    transform: rotate(5deg);
+}
+
+.olive-pencils span:nth-child(3) {
+    background: #25845e;
+    height: 41px;
+    transform: rotate(10deg);
+}
+
+.olive-pencils span:nth-child(4) {
+    background: #ffb929;
+    height: 35px;
+    transform: rotate(-13deg);
+}
+
+/* BOTTOM MOTTO */
+
+.olive-vm-motto {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 36px;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 800;
+    font-style: italic;
+    width: fit-content;
+}
+
+.olive-vm-motto b {
+    color: #ffd04b;
+}
+
+.olive-vm-motto i {
+    position: absolute;
+    height: 3px;
+    width: 95px;
+    background: #ffd04b;
+    bottom: -8px;
+    left: 45px;
+    border-radius: 5px;
+}
+
+/* DECORATIVE LEAVES */
+
+.olive-leaf {
+    position: absolute;
+    width: 22px;
+    height: 48px;
+    background: #6eae47;
+    border-radius: 100% 0 100% 0;
+    z-index: 2;
+}
+
+.olive-leaf-one {
+    left: 10px;
+    bottom: 170px;
+    transform: rotate(-35deg);
+}
+
+.olive-leaf-two {
+    left: 32px;
+    bottom: 150px;
+    transform: rotate(30deg);
+    background: #8ac65e;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .olive-vm-header h2 {
+        font-size: 34px;
+    }
+
+    .olive-vm-layout {
+        gap: 25px;
+    }
+
+    .olive-vm-vision,
+    .olive-vm-mission {
+        padding-left: 24px;
+        padding-right: 24px;
+        min-height: 340px;
+    }
+
+    .olive-vm-vision p,
+    .olive-vm-mission p {
+        font-size: 17px;
+    }
+
+    .olive-books {
+        transform: scale(0.8);
+        transform-origin: bottom right;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+    .olive-vision-section {
+        padding: 28px 18px 35px;
+    }
+
+    .olive-vm-header {
+        margin-bottom: 36px;
+    }
+
+    .olive-vm-header h2 {
+        font-size: 29px;
+    }
+
+    .olive-vm-badge {
+        font-size: 17px;
+        padding: 7px 15px;
+    }
+
+    .olive-vm-header p {
+        font-size: 17px;
+    }
+
+    .desktop-break {
+        display: none;
+    }
+
+    .olive-vm-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        max-width: 420px;
+    }
+
+    .olive-vm-vision,
+    .olive-vm-mission {
+        min-height: 0;
+        padding: 38px 27px 30px;
+    }
+
+    .olive-vm-vision {
+        border-radius: 45px 65px 45px 35px;
+    }
+
+    .olive-vm-mission {
+        border-radius: 65px 35px 45px 50px;
+    }
+
+    .olive-vm-number {
+        width: 58px;
+        height: 58px;
+        top: -17px;
+        font-size: 25px;
+    }
+
+    .olive-vm-vision h3,
+    .olive-vm-mission h3 {
+        font-size: 17px;
+    }
+
+    .olive-vm-vision p,
+    .olive-vm-mission p {
+        font-size: 17px;
+        line-height: 1.65;
+    }
+
+    .olive-vm-vision p br,
+    .olive-vm-mission p br {
+        display: none;
+    }
+
+    .olive-sun {
+        right: 5px;
+        top: 3px;
+        font-size: 43px;
+        opacity: 0.5;
+    }
+
+    .olive-paper-plane,
+    .olive-star,
+    .olive-books {
+        display: none;
+    }
+
+    .olive-vm-motto {
+        color: #17634e;
+        margin: 30px auto 0;
+        justify-content: center;
+        font-size: 17px;
+    }
+
+    .olive-leaf-one {
+        left: -3px;
+        bottom: 70px;
+    }
+
+    .olive-leaf-two {
+        left: 14px;
+        bottom: 45px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .olive-vm-vision,
+    .olive-vm-mission {
+        transition: none;
+    }
+}
+
+
+/* ==========================================
+   WHY CHOOSE US SECTION
+   SEPARATE CSS - DESKTOP & MOBILE
+========================================== */
+
+.choose-us-section-2 {
+    background-color: #ffffff;
+}
+
+/* Children and Teacher Images */
+
+.choose-us-section-2 .choose-img {
+    width: 260px;
+    height: 260px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.choose-us-section-2 .choose-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Skill Development Image */
+
+.choose-us-section-2 .skill-img img {
+    display: block;
+    width: 260px;
+    height: 260px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 991px) {
+
+    .choose-us-section-2 .choose-img {
+        width: 100%;
+        height: 260px;
+    }
+
+    .choose-us-section-2 .choose-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .choose-us-section-2 .skill-img img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 767px) {
+
+    .choose-us-section-2 .choose-img {
+        width: 100%;
+        height: 260px;
+    }
+
+    .choose-us-section-2 .choose-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .choose-us-section-2 .skill-img img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 468px) {
+
+    .choose-us-section-2 .choose-img {
+        width: 100%;
+        height: 240px;
+    }
+
+    .choose-us-section-2 .choose-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .choose-us-section-2 .skill-img img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+/* ================= OLIVE TREE PHOTO GALLERY ================= */
+
+.ot-gallery-section {
+    width: 100%;
+    padding: 30px 0;
+    background: #ffffff;
+}
+
+.ot-gallery-container {
+    width: 92%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.ot-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.ot-gallery-item {
+    position: relative;
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #eef2f5;
+}
+
+.ot-gallery-link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.ot-gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.45s ease;
+}
+
+/* Image hover effect */
+.ot-gallery-item:hover img {
+    transform: scale(1.07);
+}
+
+/* Caption overlay */
+.ot-gallery-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 18px 15px;
+    color: #ffffff;
+    background: linear-gradient(
+        to top,
+        rgba(12, 45, 31, 0.88),
+        rgba(12, 45, 31, 0.22) 55%,
+        transparent
+    );
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.ot-gallery-item:hover .ot-gallery-overlay {
+    opacity: 1;
+}
+
+.ot-gallery-overlay span {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.ot-gallery-overlay i {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #d8ad48;
+    color: #173d2b;
+    font-size: 14px;
+}
+
+/* Keep captions visible on touch devices */
+@media (hover: none) {
+    .ot-gallery-overlay {
+        opacity: 1;
+    }
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+    .ot-gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .ot-gallery-item {
+        height: 260px;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 576px) {
+    .ot-gallery-section {
+        padding: 20px 0;
+    }
+
+    .ot-gallery-container {
+        width: 94%;
+    }
+
+    .ot-gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .ot-gallery-item {
+        height: 190px;
+        border-radius: 8px;
+    }
+
+    .ot-gallery-overlay {
+        padding: 10px;
+        gap: 6px;
+    }
+
+    .ot-gallery-overlay span {
+        font-size: 17px;
+        line-height: 1.3;
+    }
+
+    .ot-gallery-overlay i {
+        width: 27px;
+        height: 27px;
+        font-size: 12px;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 360px) {
+    .ot-gallery-item {
+        height: 160px;
+    }
+
+    .ot-gallery-overlay span {
+        font-size: 15px;
+    }
+}
+
+/* ==========================================
+   OLIVE TREE - EQUAL SPACING ABOUT SECTION
+========================================== */
+
+.ot-equal-about {
+    padding: 50px 10px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.ot-equal-about .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.ot-equal-about *,
+.ot-equal-about *::before,
+.ot-equal-about *::after {
+    box-sizing: border-box;
+}
+
+.ot-equal-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 36px;
+}
+
+/* ==========================================
+   LEFT IMAGE AREA
+========================================== */
+
+.ot-equal-visual {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.ot-equal-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 14px;
+}
+
+.ot-equal-image {
+    position: relative;
+    height: 275px;
+    min-width: 0;
+    overflow: hidden;
+    background: #ceff9c;
+}
+
+.ot-image-first {
+    border-radius: 90px 90px 7px 7px;
+}
+
+.ot-image-second {
+    margin-top: 32px;
+    border-radius: 7px 7px 90px 90px;
+}
+
+.ot-equal-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.ot-equal-image:hover img {
+    transform: scale(1.04);
+}
+
+/* IMAGE CAPTION */
+
+.ot-equal-image-caption {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 9px 5px;
+    background: rgba(255, 255, 255, 0.96);
+    color: #000000;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.35;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.ot-equal-image-caption span {
+    color: #74b815;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* BOTTOM HIGHLIGHT */
+
+.ot-equal-highlight {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: 18px;
+    padding: 13px 15px;
+    background: #f3f7ee;
+    border-left: 4px solid #a8ed4e;
+    border-radius: 3px 9px 9px 3px;
+}
+
+.ot-highlight-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    color: #edbd55;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.ot-equal-highlight h3 {
+    margin: 0 0 4px;
+    color: #05460a;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.ot-equal-highlight p {
+    margin: 0;
+    color: #000000;
+    font-size: 17px;
+    line-height: 1.45;
+}
+
+/* ==========================================
+   RIGHT CONTENT AREA
+========================================== */
+
+.ot-equal-content {
+    width: 100%;
+    min-width: 0;
+}
+
+.ot-equal-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    line-height: 1.5;
+}
+
+.ot-label-line {
+    display: inline-block;
+    flex: 0 0 28px;
+    width: 28px;
+    height: 3px;
+    background: #f0c050;
+    border-radius: 3px;
+}
+
+/* MAIN HEADING */
+
+.ot-equal-content h2 {
+    margin: 0 0 15px;
+    color: #096411;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0;
+}
+
+.ot-equal-content h2 span {
+    display: block;
+    color: #81ca22;
+}
+
+/* INTRODUCTION */
+
+.ot-equal-description {
+    margin: 0 0 19px;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+/* ==========================================
+   FEATURE ITEMS
+========================================== */
+
+.ot-equal-feature {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr);
+    align-items: start;
+    gap: 14px;
+    margin-top: 17px;
+}
+
+.ot-equal-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px 12px 12px 4px;
+}
+
+.ot-icon-green {
+    background: #edf4e6;
+}
+
+.ot-icon-gold {
+    background: #fff2d9;
+}
+
+.ot-equal-icon img {
+    display: block;
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.ot-equal-feature-content {
+    min-width: 0;
+}
+
+.ot-equal-feature h3 {
+    margin: 0 0 5px;
+    color: #07540d;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.ot-equal-feature p {
+    margin: 0;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   ADMISSION BUTTON
+========================================== */
+
+.ot-equal-action {
+    margin-top: 21px;
+}
+
+.ot-equal-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    padding: 12px 19px;
+    background:#FFE800;
+    color: #000000;
+    border-radius: 5px 15px 5px 15px;
+    font-size: 17px;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: background 0.25s ease;
+}
+
+.ot-equal-button span {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.ot-equal-button:hover {
+    background: #000000;
+    border-color: #29432b;
+    color: #ffffff;
+}
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 991px) {
+    .ot-equal-about {
+        padding: 35px 0;
+    }
+
+    .ot-equal-layout {
+        gap: 24px;
+    }
+
+    .ot-equal-images {
+        gap: 10px;
+    }
+
+    .ot-equal-image {
+        height: 235px;
+    }
+
+    .ot-image-first {
+        border-radius: 65px 65px 6px 6px;
+    }
+
+    .ot-image-second {
+        margin-top: 25px;
+        border-radius: 6px 6px 65px 65px;
+    }
+
+    .ot-equal-content h2 {
+        font-size: 30px;
+    }
+
+    .ot-equal-description,
+    .ot-equal-feature p {
+        line-height: 1.6;
+    }
+
+    .ot-equal-highlight {
+        padding: 11px;
+        gap: 9px;
+    }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 767px) {
+    .ot-equal-about {
+        padding: 30px 0;
+    }
+
+    .ot-equal-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    .ot-equal-visual {
+        max-width: 460px;
+    }
+
+    .ot-equal-images {
+        gap: 13px;
+    }
+
+    .ot-equal-image {
+        height: 255px;
+    }
+
+    .ot-image-first {
+        border-radius: 65px 65px 6px 6px;
+    }
+
+    .ot-image-second {
+        margin-top: 25px;
+        border-radius: 6px 6px 65px 65px;
+    }
+
+    .ot-equal-content h2 {
+        font-size: 30px;
+        line-height: 1.35;
+    }
+
+    .ot-equal-description {
+        margin-bottom: 16px;
+    }
+
+    .ot-equal-feature {
+        margin-top: 16px;
+    }
+
+    .ot-equal-action {
+        margin-top: 19px;
+    }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 400px) {
+    .ot-equal-image {
+        height: 210px;
+    }
+
+    .ot-image-first {
+        border-radius: 50px 50px 5px 5px;
+    }
+
+    .ot-image-second {
+        margin-top: 20px;
+        border-radius: 5px 5px 50px 50px;
+    }
+
+    .ot-equal-image-caption {
+        right: 5px;
+        left: 5px;
+        gap: 4px;
+        padding: 7px 3px;
+    }
+
+    .ot-equal-highlight {
+        padding: 10px;
+    }
+
+    .ot-highlight-symbol {
+        flex-basis: 35px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .ot-equal-content h2 {
+        font-size: 27px;
+    }
+
+    .ot-equal-feature {
+        grid-template-columns: 43px minmax(0, 1fr);
+        gap: 11px;
+    }
+
+    .ot-equal-icon {
+        width: 43px;
+        height: 43px;
+    }
+
+    .ot-equal-icon img {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .ot-equal-image img,
+    .ot-equal-button {
+        transition: none;
+    }
+}
