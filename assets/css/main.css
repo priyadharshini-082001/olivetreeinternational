@@ -2909,7 +2909,7 @@ p {
 .mean-container .mean-nav ul li a {
   width: 100%;
   padding: 10px 0;
-  color: #385469;
+  color: #000000;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 600;
@@ -10133,12 +10133,13 @@ p {
 }
 @media (max-width: 767px) {
   .choose-us-wrapper-two .section-title {
-    text-align: center;
+    text-align: justify;
   }
 }
 @media (max-width: 767px) {
   .choose-us-wrapper-two p {
-    text-align: center;
+    text-align: justify;
+    font-size: 17px;
   }
 }
 .choose-us-wrapper-two .choose-img-items {

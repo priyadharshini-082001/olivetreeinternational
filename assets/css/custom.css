@@ -722,10 +722,10 @@ body {
 .ot-footer-credit {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 10px;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .ot-footer-credit a {
@@ -781,13 +781,13 @@ body {
     }
 
     .ot-footer-about p {
-        font-size: 15px;
+        font-size: 17px;
         line-height: 1.8;
     }
 
     .ot-contact-item p,
     .ot-contact-item a {
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .ot-map-frame {
@@ -803,7 +803,7 @@ body {
 
     .ot-footer-credit {
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: center
     }
 }
 /* ===== OLIVE TREE VISION & MISSION ===== */
