@@ -1073,10 +1073,11 @@ body {
 
 .olive-vm-vision p,
 .olive-vm-mission p {
-    font-size: 17px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight:400;
     line-height: 1.55;
     margin: 0;
+    padding: 3px;
 }
 
 .olive-vm-vision p {
