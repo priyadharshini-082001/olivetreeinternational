@@ -3302,7 +3302,7 @@
     display: inline-block;
     margin-bottom: 14px;
     color: darkgreen;
-    font-size: 13px;
+    font-size: 17px;
     font-weight: 800;
     letter-spacing: 2px;
 }
@@ -3774,7 +3774,7 @@
 
     .ot-methodology-label,
     .ot-methodology-heading > span {
-        font-size: 11px;
+        font-size: 17px;
         letter-spacing: 1.5px;
     }
 
