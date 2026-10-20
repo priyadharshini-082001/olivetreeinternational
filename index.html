@@ -37,6 +37,7 @@
     <!--<< Main.css >>-->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/custom.css">
+        <link rel="stylesheet" href="assets/css/inner.css">
 </head>
 
 <body>
@@ -251,83 +252,80 @@
             <div class="header-main">
                 <div class="header-left">
                     <a href="index.html" class="header-logo">
-                        <img src="assets/images/gallery1/logo.jpeg" alt="img" style="width: 200px;">
+                        <img src="assets/images/gallery1/logo.jpeg" alt="img" 
+                    >
                     </a>
 
 
                 </div>
                 <div class="mean__menu-wrapper">
                     <div class="main-menu">
-                        <nav id="mobile-menu">
-                            <ul>
-                                <li class="has-dropdown menu-thumb">
-                                    <a href="javascript:void(0)">
-                                        HOME
-                                    </a>
+   <nav id="mobile-menu" aria-label="Main Navigation">
+    <ul>
+        <li>
+            <a href="index.html">HOME</a>
+        </li>
 
-                                </li>
-                                <li class="has-dropdown active d-xl-none">
-                                    <a href="javascript:void(0)" class="border-none">
-                                        HOME
-                                    </a>
+        <li>
+            <a href="about.html">ABOUT US</a>
+        </li>
 
-                                </li>
-                                <li class="has-dropdown">
-                                    <a href="javascript:void(0)">
-                                        ABOUT US </a>
+        <!-- MANAGEMENT -->
+        <li class="has-dropdown">
+            <a href="javascript:void(0);" aria-expanded="false">
+                MANAGEMENT
+                <i class="fa-solid fa-angle-down menu-arrow"></i>
+            </a>
 
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        MANAGEMENT
-                                        <i class="fas fa-chevron-down"></i>
-                                    </a>
-                                    <ul class="submenu">
-                                        <li><a href="chairman-message.html">Chairman’s Message</a></li>
-                                        <li><a href="ceo.html">CEO's Message</a></li>
-                                        <li><a href="correspondent.html">Correspondent’s Message</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        ACADEMIC
-                                        <i class="fas fa-chevron-down"></i>
-                                    </a>
-                                    <ul class="submenu">
-                                        <li><a href="chairman-message.html">Lower Kindergarten (LKG)</a></li>
-                                        <li><a href="ceo.html">Upper Kindergarten (UKG)</a></li>
-                                        <li><a href="correspondent.html">Teaching Methodology</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        LIFE@OLIVE
-                                    </a>
-                                </li>
+            <ul class="submenu">
+                <li><a href="chairman-message.html">Chairman's Message</a></li>
+                <li><a href="ceo.html">CEO's Message</a></li>
+                <li><a href="correspondent.html">Correspondent's Message</a></li>
+            </ul>
+        </li>
 
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        PARENT'S CORNER
-                                        <i class="fas fa-chevron-down"></i>
+        <!-- ACADEMIC -->
+        <li class="has-dropdown">
+            <a href="javascript:void(0);" aria-expanded="false">
+                ACADEMIC
+                <i class="fa-solid fa-angle-down menu-arrow"></i>
+            </a>
 
-                                    </a>
-                                    <ul class="submenu">
-                                        <li><a href="chairman-message.html">Parent Guidelines</a></li>
-                                        <li><a href="ceo.html">School Discipline</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        CONTACT
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+            <ul class="submenu">
+                <li><a href="lkg.html">Lower Kindergarten (LKG)</a></li>
+                <li><a href="ukg.html">Upper Kindergarten (UKG)</a></li>
+                <li><a href="teaching-methodology.html">Teaching Methodology</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="life-at-olive.html">LIFE@OLIVE</a>
+        </li>
+
+        <!-- PARENT'S CORNER -->
+        <li class="has-dropdown">
+            <a href="javascript:void(0);" aria-expanded="false">
+                PARENT'S CORNER
+                <i class="fa-solid fa-angle-down menu-arrow"></i>
+            </a>
+
+            <ul class="submenu">
+                <li><a href="parent-guidelines.html">Parent Guidelines</a></li>
+                <li><a href="school-discipline.html">School Discipline</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="contact.html">CONTACT</a>
+        </li>
+    </ul>
+</nav>
+
                     </div>
                 </div>
                 <div class="header-right d-flex justify-content-end align-items-center">
 
-                    <a href="contact.html" class="theme-btn">ADMISSION<i class="icon-arrow-icon"></i></a>
+                    <a href="admission.html" class="theme-btn">ADMISSION<i class="icon-arrow-icon"></i></a>
                     <div class="header__hamburger my-auto d-xl-none">
                         <div class="sidebar__toggle">
                             <i class="fal fa-bars"></i>
@@ -355,51 +353,6 @@
     <!-- Sidebar Area Here -->
     <div id="targetElement" class="side_bar slideInRight side_bar_hidden">
         <div class="side_bar_overlay"></div>
-        <div class="cart-title mb-50">
-            <h4>Shopping cart</h4>
-        </div>
-        <div class="cartmini__widget">
-            <div class="cartmini__widget-item">
-                <div class="cartmini__thumb">
-                    <a href="shop-details.html">
-                        <img src="assets/img/shop-cart1.png" alt="img">
-                    </a>
-                </div>
-                <div class="cartmini__content">
-                    <h5><a href="shop-details.html">Baby Bib Pink</a></h5>
-                    <div class="cartmini__price-wrapper">
-                        <span class="cartmini__price">$46.00</span>
-                        <span class="cartmini__quantity">x2</span>
-                    </div>
-                </div>
-                <button class="cartmini__del"><i class="fal fa-times"></i></button>
-            </div>
-            <div class="cartmini__widget-item">
-                <div class="cartmini__thumb">
-                    <a href="shop-details.html">
-                        <img src="assets/img/shop-cart2.png" alt="img">
-                    </a>
-                </div>
-                <div class="cartmini__content">
-                    <h5><a href="shop-details.html">Plastic Roller Mop</a></h5>
-                    <div class="cartmini__price-wrapper">
-                        <span class="cartmini__price">$78.00</span>
-                        <span class="cartmini__quantity">x1</span>
-                    </div>
-                </div>
-                <button class="cartmini__del"><i class="fal fa-times"></i></button>
-            </div>
-            <div class="cartmini__checkout">
-                <div class="cartmini__checkout-title mb-4">
-                    <h4>Subtotal:</h4>
-                    <span>$113.00</span>
-                </div>
-                <div class="cartmini__checkout-btn">
-                    <a href="shop-cart.html" class="theme-btn mb-2 w-100"> view cart</a>
-                    <a href="checkout.html" class="theme-btn w-100 style-2"> checkout</a>
-                </div>
-            </div>
-        </div>
         <button id="closeButton" class="x-mark-icon"><i class="fas fa-times"></i></button>
     </div>
 
@@ -985,7 +938,7 @@
                                     data-wow-delay=".3s">
                                     <div class="classes-video-box">
                                         <div class="classes-image">
-                                            <img src="assets/images/gallery1/62.jpg"
+                                            <img src="assets/images/gallery1/moment.jpg"
                                                 alt="Olive Tree International School campus">
 
                                             <div class="classes-info-wave">
@@ -1057,7 +1010,6 @@
                          alt="School Life and Achievements" loading="lazy">
                     <div class="ot-gallery-overlay">
                         <span>School Life &amp; Achievements</span>
-                        <i class="fas fa-plus"></i>
                     </div>
                 </a>
             </div>
@@ -1068,7 +1020,6 @@
                          alt="Young Achievers" loading="lazy">
                     <div class="ot-gallery-overlay">
                         <span>Young Achievers</span>
-                        <i class="fas fa-plus"></i>
                     </div>
                 </a>
             </div>
@@ -1079,7 +1030,6 @@
                          alt="Dream Big" loading="lazy">
                     <div class="ot-gallery-overlay">
                         <span>Dream Big</span>
-                        <i class="fas fa-plus"></i>
                     </div>
                 </a>
             </div>
@@ -1090,7 +1040,6 @@
                          alt="Creative Learning" loading="lazy">
                     <div class="ot-gallery-overlay">
                         <span>Creative Learning</span>
-                        <i class="fas fa-plus"></i>
                     </div>
                 </a>
             </div>
@@ -1101,7 +1050,6 @@
                          alt="New Beginnings" loading="lazy">
                     <div class="ot-gallery-overlay">
                         <span>New Beginnings</span>
-                        <i class="fas fa-plus"></i>
                     </div>
                 </a>
             </div>
@@ -1112,7 +1060,6 @@
                          alt="Student Moments" loading="lazy">
                     <div class="ot-gallery-overlay">
                         <span>Student Moments</span>
-                        <i class="fas fa-plus"></i>
                     </div>
                 </a>
             </div>
@@ -1123,7 +1070,6 @@
                          alt="Learning by Doing" loading="lazy">
                     <div class="ot-gallery-overlay">
                         <span>Learning by Doing</span>
-                        <i class="fas fa-plus"></i>
                     </div>
                 </a>
             </div>
@@ -1134,7 +1080,6 @@
                          alt="Explore and Discover" loading="lazy">
                     <div class="ot-gallery-overlay">
                         <span>Graduation</span>
-                        <i class="fas fa-plus"></i>
                     </div>
                 </a>
             </div>
@@ -1437,6 +1382,5 @@ Discover everything you need to know about admissions, kindergarten learning, ac
     <script src="assets/js/main.js"></script>
 </body>
 
-<!-- Mirrored from modinathemes.com/kidza-html/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Sep 2026 10:03:18 GMT -->
 
 </html>

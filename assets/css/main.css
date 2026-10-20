@@ -1983,10 +1983,11 @@ p {
   color: var(--theme-color-2) !important;
 }
 .header-2 .header-main .main-menu ul li .submenu {
-  color: #385469;
+  color: #000000;
+  background: #ceff9a;
 }
 .header-2 .header-main .main-menu ul li .submenu li a {
-  color: #385469;
+  color: #000000;
 }
 .header-2 .header-main .main-menu ul li .submenu li a:hover {
   color: var(--theme-color-2) !important;
@@ -9937,17 +9938,17 @@ p {
   line-height: 175%;
   font-size: 18px;
   font-weight: 400;
-  color: #4B5563;
+  color: #050505;
   max-width: 605px;
 }
 @media (max-width: 1199px) {
   .faq-wrapper .accordion-box .block .acc-content .content .text {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (max-width: 470px) {
   .faq-wrapper .accordion-box .block .acc-content .content .text {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 .faq-wrapper .accordion.block.active-block {
