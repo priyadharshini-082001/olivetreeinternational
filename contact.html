@@ -260,7 +260,8 @@
                 </div>
                 <div class="mean__menu-wrapper">
                     <div class="main-menu">
-   <nav id="mobile-menu" aria-label="Main Navigation">
+   <nav id="mobile-menu" aria-label="Main Navigation" style="background-color:
+    white;padding: 0px 15px;border-radius: 5px;">
     <ul>
         <li>
             <a href="index.html">HOME</a>
@@ -502,26 +503,6 @@
 
                 </div>
 
-
-                <!-- Contact Strip -->
-                <div class="ot-enquiry-contact-strip">
-
-                    <div class="ot-enquiry-contact-icon">
-                        <i class="fa-solid fa-phone-volume"></i>
-                    </div>
-
-                    <div class="ot-enquiry-contact-text">
-                        <span>HAVE A QUESTION?</span>
-                        <p>Our team is happy to help you.</p>
-                    </div>
-
-                    <a href="tel:+917550010013" class="ot-enquiry-call">
-                        <i class="fa-solid fa-phone"></i>
-                        Call Us
-                    </a>
-
-                </div>
-
             </div>
 
             <!-- Right Enquiry Form -->
@@ -544,189 +525,8 @@
                     Complete the details below and let us know how we can help.
                 </p>
 
-                <form
-                    class="ot-enquiry-form"
-                    id="ot-admission-form"
-                    action="admission-submit.php"
-                    method="POST"
-                >
-
-                    <!-- Parent Name -->
-                    <div class="ot-enquiry-field">
-                        <label for="ot-parent-name">
-                            Parent / Guardian Name
-                            <span>*</span>
-                        </label>
-
-                        <div class="ot-enquiry-input-wrap">
-                            <i class="fa-solid fa-user"></i>
-                            <input
-                                type="text"
-                                id="ot-parent-name"
-                                name="parent_name"
-                                placeholder="Enter parent or guardian name"
-                                autocomplete="name"
-                                required
-                            >
-                        </div>
-                    </div>
-
-                    <!-- Phone and Email -->
-                    <div class="ot-enquiry-field-row">
-
-                        <div class="ot-enquiry-field">
-                            <label for="ot-parent-phone">
-                                Phone Number
-                                <span>*</span>
-                            </label>
-
-                            <div class="ot-enquiry-input-wrap">
-                                <i class="fa-solid fa-phone"></i>
-                                <input
-                                    type="tel"
-                                    id="ot-parent-phone"
-                                    name="phone"
-                                    placeholder="Enter phone number"
-                                    autocomplete="tel"
-                                    inputmode="tel"
-                                    pattern="[0-9+\-\s()]{7,20}"
-                                    title="Enter a valid phone number"
-                                    required
-                                >
-                            </div>
-                        </div>
-
-                        <div class="ot-enquiry-field">
-                            <label for="ot-parent-email">Email Address</label>
-
-                            <div class="ot-enquiry-input-wrap">
-                                <i class="fa-solid fa-envelope"></i>
-                                <input
-                                    type="email"
-                                    id="ot-parent-email"
-                                    name="email"
-                                    placeholder="Enter email address"
-                                    autocomplete="email"
-                                >
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- Child Name -->
-                    <div class="ot-enquiry-field">
-                        <label for="ot-child-name">Child's Name</label>
-
-                        <div class="ot-enquiry-input-wrap">
-                            <i class="fa-solid fa-child-reaching"></i>
-                            <input
-                                type="text"
-                                id="ot-child-name"
-                                name="child_name"
-                                placeholder="Enter child's name"
-                            >
-                        </div>
-                    </div>
-
-                    <!-- Class -->
-                    <div class="ot-enquiry-field-row">
-
-                        <div class="ot-enquiry-field">
-                            <label for="ot-enquiry-class">
-                                Class of Interest
-                                <span>*</span>
-                            </label>
-
-                            <div class="ot-enquiry-input-wrap">
-                                <i class="fa-solid fa-graduation-cap"></i>
-
-                                <select
-                                    id="ot-enquiry-class"
-                                    name="admission_class"
-                                    required
-                                >
-                                    <option value="">Select class</option>
-                                    <option value="Pre-KG">Pre-KG</option>
-                                    <option value="LKG">LKG</option>
-                                    <option value="UKG">UKG</option>
-                                    <option value="Class 1">Class 1</option>
-                                    <option value="Class 2">Class 2</option>
-                                    <option value="Class 3">Class 3</option>
-                                    <option value="Class 4">Class 4</option>
-                                    <option value="Class 5">Class 5</option>
-                                    <option value="Class 6">Class 6</option>
-                                    <option value="Class 7">Class 7</option>
-                                    <option value="Class 8">Class 8</option>
-                                    <option value="Class 9">Class 9</option>
-                                    <option value="Class 10">Class 10</option>
-                                    <option value="Class 11">Class 11</option>
-                                    <option value="Class 12">Class 12</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="ot-enquiry-field">
-                            <label for="ot-academic-year">Academic Year</label>
-
-                            <div class="ot-enquiry-input-wrap">
-                                <i class="fa-solid fa-calendar-days"></i>
-
-                                <select
-                                    id="ot-academic-year"
-                                    name="academic_year"
-                                >
-                                    <option value="">Select year</option>
-                                    <option value="2026-2027">2026–2027</option>
-                                    <option value="2027-2028">2027–2028</option>
-                                </select>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- Message -->
-                    <div class="ot-enquiry-field">
-                        <label for="ot-enquiry-message">
-                            Your Message
-                        </label>
-
-                        <textarea
-                            id="ot-enquiry-message"
-                            name="message"
-                            rows="4"
-                            placeholder="Tell us what you would like to know..."
-                        ></textarea>
-                    </div>
-
-                    <!-- Consent -->
-                    <label class="ot-enquiry-consent">
-                        <input
-                            type="checkbox"
-                            name="consent"
-                            value="yes"
-                            required
-                        >
-
-                        <span>
-                            I agree to be contacted by the school regarding
-                            this enquiry.
-                        </span>
-                    </label>
-
-                    <!-- Submit -->
-                    <button type="submit" class="ot-enquiry-submit">
-                        <span>Submit Enquiry</span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-
-                    <p class="ot-enquiry-form-note">
-                        <i class="fa-solid fa-lock"></i>
-                        Your details should be handled responsibly and used
-                        for responding to your enquiry.
-                    </p>
-
-                </form>
+              <iframe aria-label='Contact Us' frameborder="0" style="height:500px;width:99%;border:none;" src='https://forms.zohopublic.in/olivetreeglobal1/form/CareerFrom/formperma/6DWS7dNK5KE8XIbTuPMHwiIjwH3q6Jnlyr6sAcA9tT0' >
+</iframe>
 
             </div>
 
@@ -780,7 +580,7 @@
             </p>
         </div>
 
-        <!-- QUICK LINKS -->
+             <!-- QUICK LINKS -->
         <div class="ot-footer-column ot-footer-links">
             <h3>Quick Links</h3>
             <span class="ot-footer-line"></span>
@@ -788,8 +588,8 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="facilities.html">Our Facilities</a></li>
-                <li><a href="activities.html">Activities</a></li>
+                <li><a href="chairman-message.html">Management</a></li>
+                <li><a href="teaching-methodology.html">Activities</a></li>
                 <li><a href="admission.html">Admissions</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
